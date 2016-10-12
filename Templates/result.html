@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Friend's List</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <div id="wrapper">
+            <h1>Friends List</h1>
+            <div id="list">
+                {% for friend in all_friends: %}
+                <p>First Name: {{ friend['first_name'] }}  Last Name: {{ friend['last_name'] }}   Occupation: {{ friend['occupation'] }}  ID: {{ friend['id'] }}
+                    <form>
+                        <input type="hidden" name="delete" value= {{ friend['id'] }}>
+                        <input type="submit" value="delete">
+                    </form>
+                </p>
+                <hr>
+                {% endfor %}
+            </div>
+        </div>
+    </body>
+</html>

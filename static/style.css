@@ -1,0 +1,30 @@
+#wrapper {
+    width: 960px;
+    height: 600px;
+    padding: 10px;  
+    background-color: aquamarine;
+}
+
+#form {
+    width: 300px;
+    height: 400px;
+    background-color: darkorange;
+    display:inline-block;
+    vertical-align: top;
+}
+
+#form form input {
+    display:block;
+    width: 200px;
+    
+}
+
+#list {
+    width: 600px;
+    height: 400px;
+    background-color: firebrick;
+    display:inline-block;
+    vertical-align: top;
+    margin-left: 50px;
+    
+}
